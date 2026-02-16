@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volyent — Быстрый и безопасный VPN</title>
+    <meta name="description"
+        content="Volyent VPN — молниеносный VPN. Приложение для Mac и Windows. Подписка через Telegram.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ─── Navbar ────────────────────────────────────────────── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">◆</span> Volyent
+            </a>
+            <div class="nav-links">
+                <a href="#features">Функции</a>
+                <a href="#pricing">Тарифы</a>
+                <a href="#download">Скачать</a>
+            </div>
+            <a href="#download" class="nav-cta">Открыть</a>
+        </div>
+    </nav>
+
+    <!-- ─── Hero ──────────────────────────────────────────────── -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">🛡 VPN нового поколения</div>
+            <h1 class="hero-title">
+                Интернет без<br>
+                <span class="gradient-text">границ</span>
+            </h1>
+            <p class="hero-sub">
+                Молниеносная скорость на протоколе VLESS.<br>
+                Полная приватность. Нулевые логи.
+            </p>
+            <div class="hero-actions">
+                <a href="#download" class="btn btn-primary btn-lg">
+                    <span>Скачать бесплатно</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="https://t.me/Volyent_bot" target="_blank" class="btn btn-ghost btn-lg">
+                    Открыть бота ✈
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">99.9%</span>
+                    <span class="stat-label">Uptime</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">&lt;15ms</span>
+                    <span class="stat-label">Пинг</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">0</span>
+                    <span class="stat-label">Логов</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3D floating card -->
+        <div class="hero-3d-wrapper">
+            <div class="floating-card" id="floatingCard">
+                <div class="card-screen">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span style="background:#ff5f57"></span>
+                            <span style="background:#febc2e"></span>
+                            <span style="background:#28c840"></span>
+                        </div>
+                        <span class="card-title-bar">Volyent</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-status connected">
+                            <div class="pulse-ring"></div>
+                            <div class="status-dot"></div>
+                        </div>
+                        <div class="card-status-text">Подключено</div>
+                        <div class="card-server">🇳🇱 Amsterdam • 12ms</div>
+                        <div class="card-speed">
+                            <div class="speed-row">
+                                <span>↑ 45.2 MB/s</span>
+                                <span>↓ 128.7 MB/s</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Features ──────────────────────────────────────────── -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Возможности</span>
+                <h2 class="section-title">Почему <span class="gradient-text">Volyent</span>?</h2>
+                <p class="section-sub">Всё, что нужно для безопасного и быстрого интернета</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card feature-card-large">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Протокол VLESS</h3>
+                    <p>Новейший протокол, который не блокируется. Максимальная скорость и минимальный пинг даже в
+                        странах с жёсткой цензурой.</p>
+                    <div class="feature-visual">
+                        <div class="speed-bar">
+                            <div class="speed-fill" style="width: 95%">
+                                <span>VLESS — 340 Mbps</span>
+                            </div>
+                        </div>
+                        <div class="speed-bar dim">
+                            <div class="speed-fill" style="width: 40%">
+                                <span>OpenVPN — 85 Mbps</span>
+                            </div>
+                        </div>
+                        <div class="speed-bar dim">
+                            <div class="speed-fill" style="width: 55%">
+                                <span>WireGuard — 180 Mbps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Нулевые логи</h3>
+                    <p>Мы не храним никаких данных о вашей активности. Ни IP, ни трафик, ни история — ничего.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Серверы по всему миру</h3>
+                    <p>Нидерланды, Германия, Финляндия и другие локации. Выбирай ближайший сервер для лучшей скорости.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🖥</div>
+                    <h3>Mac и Windows</h3>
+                    <p>Нативное приложение для macOS и Windows. Один клик — и ты подключен. Без сложных настроек.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Telegram бот</h3>
+                    <p>Управляй подпиской, получай ключи и оплачивай звёздами — всё через удобного Telegram бота.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔑</div>
+                    <h3>Мультиключи</h3>
+                    <p>До 5 VPN ключей на аккаунт. Подключай все свои устройства одновременно.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── How it works ──────────────────────────────────────── -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Как начать</span>
+                <h2 class="section-title">Три простых <span class="gradient-text">шага</span></h2>
+            </div>
+            <div class="steps-row">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">✈</div>
+                    <h3>Открой бота</h3>
+                    <p>Перейди в <b>@Volyent_bot</b> в Telegram и нажми /start</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="60" height="2">
+                        <line x1="0" y1="1" x2="60" y2="1" stroke="rgba(124,92,255,0.3)" stroke-width="2"
+                            stroke-dasharray="6 4" />
+                    </svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">⭐</div>
+                    <h3>Оплати звёздами</h3>
+                    <p>Выбери тариф и оплати через Telegram Stars — быстро и безопасно</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="60" height="2">
+                        <line x1="0" y1="1" x2="60" y2="1" stroke="rgba(124,92,255,0.3)" stroke-width="2"
+                            stroke-dasharray="6 4" />
+                    </svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">🚀</div>
+                    <h3>Подключайся</h3>
+                    <p>Скачай приложение, вставь ключ и наслаждайся свободным интернетом</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Pricing ───────────────────────────────────────────── -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Тарифы</span>
+                <h2 class="section-title">Простые <span class="gradient-text">цены</span></h2>
+                <p class="section-sub">Оплата через Telegram Stars. Без скрытых комиссий.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-label">7 дней</div>
+                    <div class="price-amount">50 <span>⭐</span></div>
+                    <div class="price-rub">~55 ₽</div>
+                    <ul class="price-features">
+                        <li>✓ Полный доступ</li>
+                        <li>✓ Все серверы</li>
+                        <li>✓ Неограниченный трафик</li>
+                    </ul>
+                    <a href="https://t.me/Volyent_bot" class="btn btn-outline">Выбрать</a>
+                </div>
+                <div class="price-card popular">
+                    <div class="popular-badge">Популярный</div>
+                    <div class="price-label">1 месяц</div>
+                    <div class="price-amount">150 <span>⭐</span></div>
+                    <div class="price-rub">~160 ₽</div>
+                    <ul class="price-features">
+                        <li>✓ Полный доступ</li>
+                        <li>✓ Все серверы</li>
+                        <li>✓ Неограниченный трафик</li>
+                        <li>✓ До 5 ключей</li>
+                    </ul>
+                    <a href="https://t.me/Volyent_bot" class="btn btn-primary">Выбрать</a>
+                </div>
+                <div class="price-card">
+                    <div class="price-label">3 месяца</div>
+                    <div class="price-amount">350 <span>⭐</span></div>
+                    <div class="price-rub">~380 ₽</div>
+                    <ul class="price-features">
+                        <li>✓ Полный доступ</li>
+                        <li>✓ Все серверы</li>
+                        <li>✓ Неограниченный трафик</li>
+                    </ul>
+                    <a href="https://t.me/Volyent_bot" class="btn btn-outline">Выбрать</a>
+                </div>
+                <div class="price-card">
+                    <div class="price-label">6 месяцев</div>
+                    <div class="price-amount">600 <span>⭐</span></div>
+                    <div class="price-rub">~650 ₽</div>
+                    <ul class="price-features">
+                        <li>✓ Полный доступ</li>
+                        <li>✓ Все серверы</li>
+                        <li>✓ Неограниченный трафик</li>
+                    </ul>
+                    <a href="https://t.me/Volyent_bot" class="btn btn-outline">Выбрать</a>
+                </div>
+                <div class="price-card best-value">
+                    <div class="popular-badge">Лучшая цена</div>
+                    <div class="price-label">1 год</div>
+                    <div class="price-amount">1000 <span>⭐</span></div>
+                    <div class="price-rub">~1080 ₽</div>
+                    <ul class="price-features">
+                        <li>✓ Полный доступ</li>
+                        <li>✓ Все серверы</li>
+                        <li>✓ Неограниченный трафик</li>
+                        <li>✓ До 5 ключей</li>
+                        <li>✓ Экономия 40%</li>
+                    </ul>
+                    <a href="https://t.me/Volyent_bot" class="btn btn-primary">Выбрать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Download ──────────────────────────────────────────── -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-bg-orb"></div>
+                <div class="section-header">
+                    <h2 class="section-title">Скачай <span class="gradient-text">Volyent</span></h2>
+                    <p class="section-sub">Доступно для macOS и Windows. Бесплатно.</p>
+                </div>
+                <div class="download-buttons">
+                    <a href="https://github.com/grosa787/Volyent/releases/download/v1.0.6/Volyent-1.0.6-arm64.dmg"
+                        class="download-btn mac">
+                        <div class="dl-icon">🍎</div>
+                        <div class="dl-text">
+                            <span class="dl-small">Скачать для</span>
+                            <span class="dl-big">macOS</span>
+                        </div>
+                    </a>
+                    <a href="/downloads/windows/Volyent.exe" class="download-btn win">
+                        <div class="dl-icon">🪟</div>
+                        <div class="dl-text">
+                            <span class="dl-small">Скачать для</span>
+                            <span class="dl-big">Windows</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Footer ────────────────────────────────────────────── -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo-icon">◆</span> Volyent
+            </div>
+            <div class="footer-links">
+                <a href="https://t.me/Volyent_bot" target="_blank">Telegram бот</a>
+                <a href="#features">Функции</a>
+                <a href="#pricing">Тарифы</a>
+                <a href="#download">Скачать</a>
+            </div>
+            <div class="footer-copy">
+                © 2026 Volyent. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

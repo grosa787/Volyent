@@ -1,0 +1,65 @@
+{
+  "name": "volyent-desktop",
+  "version": "1.0.7",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:vite\" \"npm run dev:electron\"",
+    "dev:vite": "vite",
+    "dev:electron": "sleep 2 && VITE_DEV_SERVER_URL=http://localhost:5173 electron .",
+    "build": "vite build && electron-builder",
+    "build:vite": "vite build"
+  },
+  "build": {
+    "appId": "com.volyent.app",
+    "productName": "Volyent",
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.utilities",
+      "icon": "assets/icon.icns"
+    },
+    "protocols": [
+      {
+        "name": "Volyent Auth",
+        "schemes": [
+          "volyent"
+        ]
+      }
+    ],
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "asarUnpack": [
+      "electron/bin/**",
+      "assets/**"
+    ],
+    "extraResources": [
+      {
+        "from": "assets/trayTemplate.png",
+        "to": "assets/trayTemplate.png"
+      },
+      {
+        "from": "assets/trayTemplate@2x.png",
+        "to": "assets/trayTemplate@2x.png"
+      }
+    ]
+  },
+  "dependencies": {
+    "keytar": "^7.9.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "concurrently": "^9.0.0",
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0",
+    "vite": "^6.0.0"
+  }
+}

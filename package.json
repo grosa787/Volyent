@@ -1,0 +1,11 @@
+{
+  "name": "volyent",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:desktop": "cd apps/desktop && npm run dev",
+    "test:server": "cd server && npm test",
+    "install:all": "cd server && npm install && cd ../apps/desktop && npm install"
+  }
+}
